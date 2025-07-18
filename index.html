@@ -215,6 +215,52 @@
             line-height: 1.8;
         }
 
+        /* Education Section */
+        .education-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .education-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            color: white;
+        }
+
+        .education-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .education-date {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .education-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        .education-content h4 {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 15px;
+        }
+
+        .education-content p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
         /* Portfolio Section */
         .portfolio-grid {
             display: grid;
@@ -421,6 +467,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -448,8 +495,44 @@
                     👋
                 </div>
                 <div class="about-text">
-                    <p>I'm a dedicated and versatile <strong>Software Engineer & Game Developer</strong> with a First Class Honours degree in BSc Computer Science. My strengths lie in game development, interactive media, and immersive VR experiences. I've worked extensively with Unity (C#), Unreal Engine, Python, and Flutter, and I'm passionate about creating intuitive, immersive, and meaningful digital experiences.</p>
-                    <p>Throughout university, I've led and contributed to a variety of projects — from a VR usability study using the Meta Quest 3 to an eco‑tech business prototype and a networked multiplayer Python game. I combine strong technical skills with user-centred design thinking, and I'm now actively looking for roles where I can apply this blend of creative and engineering knowledge.</p>
+                    <p>I'm a dedicated and versatile <strong>Software Engineer & Game Developer</strong> currently completing my Bachelor's degree in Computer Software Engineering at Blackpool and The Fylde College (Jun 2024 - Jun 2025, Grade: 1st). My educational foundation includes a Foundation degree in Software Engineering Game Development and a Level 3 Diploma in ICT Systems and Data Security with Distinction.</p>
+                    <p>My expertise spans across game development, interactive media, and immersive VR experiences. I've worked extensively with Unity (C#), Unreal Engine, Python, and Flutter. Throughout my studies, I've led and contributed to a variety of projects — from VR usability studies using the Meta Quest 3 to networked multiplayer games and innovative tech prototypes. I combine strong technical skills with user-centred design thinking, and I'm actively seeking roles where I can apply this blend of creative and engineering knowledge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-date">Jun 2024 - Jun 2025</div>
+                    <div class="education-content">
+                        <h3>Bachelor's Degree, Computer Software Engineering</h3>
+                        <h4>Blackpool and The Fylde College</h4>
+                        <p><strong>Grade:</strong> 1st</p>
+                        <p><strong>Key Skills:</strong> Visual Studio, SQL, JavaScript, Machine Learning, Databases, C#, Unity, Database Management System (DBMS), HTML, Communication, Software Development, Game Engines, Python, Game Development</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-date">Sep 2022 - Jun 2024</div>
+                    <div class="education-content">
+                        <h3>Foundation Degree, Software Engineering Game Development</h3>
+                        <h4>Blackpool and The Fylde College</h4>
+                        <p><strong>Key Skills:</strong> Visual Studio, SQL, JavaScript, Machine Learning, Databases, C#, Unity, HTML, Software Development, Game Engines, Python, Game Development</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-date">Sep 2021 - Jun 2022</div>
+                    <div class="education-content">
+                        <h3>Level 3 Diploma, ICT Systems and Data Security</h3>
+                        <h4>Blackpool and The Fylde College</h4>
+                        <p><strong>Grade:</strong> Distinction</p>
+                        <p><strong>Modules:</strong> Customer Support Provision for the IT Professional, Networking Principles, ICT Systems Security Policy, Principles of ICT System and Data Security, Web Development Creating An Event Driven Computer Program</p>
+                        <p><strong>Key Skills:</strong> Procedural Programming, Visual Studio, SQL, JavaScript, Machine Learning, Databases, C#, Unity, Testing and Debugging, Program Design, HTML, Software Development, Game Engines, Python, Game Development</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -555,12 +638,11 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="#">📧</a>
-                <a href="#">💼</a>
-                <a href="#">🐦</a>
-                <a href="#">📸</a>
+                <a href="mailto:peterbidle1@gmail.com" title="Email">📧</a>
+                <a href="https://linkedin.com/in/yourprofile" title="LinkedIn">💼</a>
+                <a href="https://github.com/yourusername" title="GitHub">💻</a>
             </div>
-            <p>&copy; 2025 Your Portfolio. All rights reserved.</p>
+            <p>&copy; 2025 Peter Bidle. All rights reserved.</p>
         </div>
     </footer>
 

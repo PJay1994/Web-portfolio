@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name - Peter Bidle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .back-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #667eea;
+            transform: translateX(-5px);
+        }
+
+        /* Hero Section */
+        .project-hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+        }
+
+        .project-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tech-tag {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Main Content */
+        .main-content {
+            background: rgba(255, 255, 255, 0.95);
+            margin: 0 20px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .content-section {
+            padding: 60px;
+        }
+
+        .content-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #4a5568;
+        }
+
+        .content-section ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        .content-section li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: #4a5568;
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-placeholder {
+            height: 200px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .gallery-caption {
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #6c757d;
+            text-align: center;
+        }
+
+        /* Key Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .feature-item {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateX(5px);
+        }
+
+        .feature-item h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .feature-item p {
+            color: #6c757d;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        /* Code Block */
+        .code-block {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 25px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 25px 0;
+            font-family: 'Courier New', monospace;
+            border-left: 4px solid #667eea;
+        }
+
+        .code-block code {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Project Links */
+        .project-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .project-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-btn.secondary {
+            background: linear-gradient(45deg, #6c757d, #495057);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .project-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-section {
+                padding: 40px 30px;
+            }
+
+            .tech-stack {
+                justify-content: center;
+            }
+
+            .project-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Peter Bidle</a>
+            <a href="index.html#portfolio" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <h1>VR Interaction Study</h1>
+            <p class="project-subtitle">Hand Tracking vs Controllers - Usability & Immersion Research</p>
+            <div class="tech-stack">
+                <span class="tech-tag">Unity</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">XR Interaction Toolkit</span>
+                <span class="tech-tag">Meta Quest 3</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Project Overview -->
+            <section class="content-section">
+                <h2>Project Overview</h2>
+                <p>This research project explores the differences between hand tracking and traditional VR controllers in terms of user experience, immersion, and task completion efficiency. Developed for academic research purposes, the study involved creating multiple VR prototypes and conducting user testing sessions with participants.</p>
+                
+                <p>The project aimed to understand how different interaction methods affect user behavior in virtual environments, providing valuable insights for future VR application development and user interface design decisions.</p>
+
+                <!-- Image Gallery -->
+                <div class="image-gallery">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">🥽</div>
+                        <div class="gallery-caption">VR Environment Setup</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">👋</div>
+                        <div class="gallery-caption">Hand Tracking Interface</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">🎮</div>
+                        <div class="gallery-caption">Controller Interface</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Features -->
+            <section class="content-section">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h4>Dual Interaction Systems</h4>
+                        <p>Implemented both hand tracking and controller-based interaction methods for comparative analysis.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>User Testing Framework</h4>
+                        <p>Built-in data collection and analytics system to track user performance and behavior patterns.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Immersive Environments</h4>
+                        <p>Created multiple virtual scenarios to test different interaction paradigms and use cases.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Performance Metrics</h4>
+                        <p>Real-time tracking of completion times, error rates, and user satisfaction scores.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Implementation -->
+            <section class="content-section">
+                <h2>Technical Implementation</h2>
+                <p>The project was built using Unity's XR Interaction Toolkit, leveraging the Meta Quest 3's advanced hand tracking capabilities alongside traditional controller support.</p>
+
+                <h3>Core Technologies:</h3>
+                <ul>
+                    <li><strong>Unity 2022.3 LTS</strong> - Primary development environment</li>
+                    <li><strong>XR Interaction Toolkit</strong> - Cross-platform VR interaction framework</li>
+                    <li><strong>Meta Quest 3 SDK</strong> - Hand tracking and device-specific features</li>
+                    <li><strong>C# Scripting</strong> - Custom interaction logic and data collection</li>
+                </ul>
+
+                <div class="code-block">
+                    <code>
+// Example: Hand tracking detection and switching
+public class InteractionModeManager : MonoBehaviour
+{
+    public XRHandTrackingSubsystem handTracking;
+    public GameObject handTrackingUI;
+    public GameObject controllerUI;
+    
+    void Update()
+    {
+        if (handTracking.isRunning && handsAreTracked)
+        {
+            SwitchToHandTracking();
+        }
+        else
+        {
+            SwitchToControllers();
+        }
+    }
+}
+                    </code>
+                </div>
+            </section>
+
+            <!-- Research Findings -->
+            <section class="content-section">
+                <h2>Research Findings</h2>
+                <p>The study revealed several key insights about VR interaction preferences:</p>
+                
+                <ul>
+                    <li>Hand tracking showed higher immersion scores but longer task completion times</li>
+                    <li>Controllers provided more precise input for complex interactions</li>
+                    <li>User preference varied significantly based on prior VR experience</li>
+                    <li>Hybrid approaches combining both methods showed promising results</li>
+                </ul>
+
+                <p>These findings contribute to the broader understanding of VR user interface design and inform best practices for future VR application development.</p>
+            </section>
+
+            <!-- Project Links -->
+            <div class="project-links">
+                <a href="#" class="project-btn">
+                    <i class="fab fa-github"></i>
+                    View on GitHub
+                </a>
+                <a href="#" class="project-btn secondary">
+                    <i class="fas fa-file-pdf"></i>
+                    Research Paper
+                </a>
+                <a href="#" class="project-btn secondary">
+                    <i class="fas fa-play"></i>
+                    Demo Video
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>

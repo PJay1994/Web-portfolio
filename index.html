@@ -736,7 +736,7 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>Get In Touch</h2>
-            <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/success>
+            <form class="contact-form" name="contact" method="POST" data-netlify="true" >
                 <input type="hidden" name="form-name" value="contact" />
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -792,12 +792,6 @@
             }
         });
 
-        // Contact form submission
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            this.reset();
-        });
 
         // Intersection Observer for animations
         const observerOptions = {

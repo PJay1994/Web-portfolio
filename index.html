@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -735,7 +736,8 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>Get In Touch</h2>
-            <form class="contact-form">
+            <form class="contact-form"  name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -757,9 +759,9 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="mailto:peterbidle1@gmail.com" title="Email">📧</a>
-                <a href="https://linkedin.com/in/peterbidle" title="LinkedIn">💼</a>
-                <a href="https://github.com/PJay1994" title="GitHub">💻</a>
+                <a href="mailto:peterbidle1@gmail.com" title="Email"> <i class="fa-solid fa-envelope"></i> </a>
+                <a href="https://linkedin.com/in/peterbidle" title="LinkedIn"> <i class="fa-brands fa-linkedin"></i> </a>
+                <a href="https://github.com/PJay1994" title="GitHub"> <i class="fa-brands fa-github"></i> </a>
             </div>
             <p>&copy; 2025 Peter Bidle. All rights reserved.</p>
         </div>

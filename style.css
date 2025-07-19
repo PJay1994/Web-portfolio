@@ -562,13 +562,6 @@
             padding: 15px 20px;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #667eea;
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
 
         .back-link {
             display: flex;

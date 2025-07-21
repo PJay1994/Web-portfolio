@@ -819,29 +819,29 @@ footer {
     }
 
     /* Logo styling */
-    .logo-image {
-    height: 25px;  /* Much smaller than current size */
-    width: auto;
+    .logo-container {
+         display: flex;
+         align-items: center;
     }
 
-    .logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;  /* Smaller gap */
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #667eea;
-    text-decoration: none;
-    transition: transform 0.3s ease;
+    .logo-image {
+        height: 20px;  /* Adjust as needed */
+        width: auto;
+    }
+
+    .logo:hover {
+        transform: scale(1.05);
     }
 
     @media (max-width: 768px) {
     .logo-image {
-        height: 20px;
+        height: 30px;
+         }
     }
-    
-    .logo {
-        gap: 6px;
-    }
+
+    @media (max-width: 768px) {
+        .logo {
+            gap: 8px;  /* Smaller gap on mobile screens */
+        }
     }
 }

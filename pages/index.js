@@ -7,13 +7,16 @@ export default function Home() {
       <Head>
         <title>Peter Bidle - Portfolio</title>
         <meta name="description" content="Software Engineer & Game Developer Portfolio" />
+        <link rel="icon" href="/favicon20x20.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
       </Head>
 
       {/* Navigation */}
       <nav id="navbar">
         <div className="container">
-          <a href="#" className="logo"> <img src="/logo.png" alt="Logo" className="logo-image" /> Portfolio</a>
+          <a href="#" className="logo">
+            <img src="/logo.png" alt="Peter Bidle Logo" className="logo-image" />
+          </a>
           <ul className="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>

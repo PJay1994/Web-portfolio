@@ -7,19 +7,22 @@ export default function BlackpoolTycoon() {
       <Head>
         <title>Blackpool Tycoon Board Game - Peter Bidle</title>
         <meta name="description" content="Strategic Board Game Prototype - Property Management & Tourism" />
+        <link rel="icon" href="/favicon20x20.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
       </Head>
 
       {/* Navigation */}
-      <nav>
+    <nav>
         <div className="container">
-          <Link href="/" className="logo">Peter Bidle</Link>
-          <Link href="/#portfolio" className="back-link">
-            <i className="fas fa-arrow-left"></i>
+            <Link href="/" className="logo">
+                <img src="/logo.png" alt="Peter Bidle Logo" className="logo-image" />
+            </Link>
+            <Link href="/#portfolio" className="back-link">
+                <i className="fas fa-arrow-left"></i>
             Back to Portfolio
-          </Link>
+            </Link>
         </div>
-      </nav>
+    </nav>  
 
       {/* Project Hero */}
       <section className="project-hero">

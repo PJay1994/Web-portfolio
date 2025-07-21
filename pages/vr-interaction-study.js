@@ -7,6 +7,7 @@ export default function VRInteractionStudy() {
       <Head>
         <title>VR Interaction Study - Peter Bidle</title>
         <meta name="description" content="Hand Tracking vs Controllers - Usability & Immersion Research" />
+        <link rel="icon" href="/favicon20x20.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
       </Head>
 

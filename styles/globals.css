@@ -819,10 +819,15 @@ footer {
     }
 
     /* Logo styling */
+    .logo-image {
+    height: 25px;  /* Much smaller than current size */
+    width: auto;
+    }
+
     .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;  /* Smaller gap */
     font-size: 1.5rem;
     font-weight: 700;
     color: #667eea;
@@ -830,18 +835,13 @@ footer {
     transition: transform 0.3s ease;
     }
 
-    .logo-image {
-    height: 20px;
-    width: auto;
-    }
-
-    .logo:hover {
-    transform: scale(1.05);
-    }
-
     @media (max-width: 768px) {
     .logo-image {
-        height: 18px;
+        height: 20px;
+    }
+    
+    .logo {
+        gap: 6px;
     }
     }
 }

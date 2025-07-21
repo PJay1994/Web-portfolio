@@ -140,11 +140,11 @@ public class InteractionModeManager : MonoBehaviour
 
           {/* Project Links */}
           <div className="project-links">
-            <a href="#" className="project-btn">
+            <a href="https://github.com/PJay1994/Dissertation-VR-Handtracking-VS-controller" className="project-btn" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
               View on GitHub
             </a>
-            <a href="#" className="project-btn secondary">
+            <a href="https://github.com/PJay1994/Dissertation-VR-Handtracking-VS-controller/tree/main#readmeS" className="project-btn secondary" target="_blank" rel="noopener noreferrer">
               <i className="fas fa-file-pdf"></i>
               Research Paper
             </a>

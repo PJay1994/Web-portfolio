@@ -817,4 +817,31 @@ footer {
     .main-content {
         margin: 0 10px;
     }
+
+    /* Logo styling */
+    .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #667eea;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    }
+
+    .logo-image {
+    height: 35px;
+    width: auto;
+    }
+
+    .logo:hover {
+    transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+    .logo-image {
+        height: 30px;
+    }
+    }
 }

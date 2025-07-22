@@ -211,10 +211,6 @@ class GameServer:
               View on GitHub
             </a>
             <a href="#" className="project-btn secondary">
-              <i className="fas fa-download"></i>
-              Download Source
-            </a>
-            <a href="#" className="project-btn secondary">
               <i className="fas fa-book"></i>
               Documentation
             </a>

@@ -253,10 +253,6 @@ public class Player : GameObject
               <i className="fab fa-github"></i>
               View on GitHub
             </a>
-            <a href="#" className="project-btn secondary" target="_blank" rel="noopener noreferrer">
-              <i className="fas fa-play"></i>
-              Play Demo
-            </a>
             <a href="https://github.com/PJay1994/monogame-platformer/releases" className="project-btn secondary" target="_blank" rel="noopener noreferrer">
               <i className="fas fa-download"></i>
               Download Game

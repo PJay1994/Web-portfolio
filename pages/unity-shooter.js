@@ -196,10 +196,6 @@ public class ObjectPool : MonoBehaviour
               View on GitHub
             </a>
             <a href="#" className="project-btn secondary">
-              <i className="fas fa-play"></i>
-              Play Demo
-            </a>
-            <a href="#" className="project-btn secondary">
               <i className="fas fa-download"></i>
               Download Game
             </a>

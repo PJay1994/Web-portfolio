@@ -216,10 +216,6 @@ class NeuralNetwork {
               <i className="fab fa-github"></i>
               View on GitHub
             </a>
-            <a href="#" className="project-btn secondary" target="_blank" rel="noopener noreferrer">
-              <i className="fas fa-play"></i>
-              Live Demo
-            </a>
             <a href="https://github.com/PJay1994/self-driving-car-ai/archive/main.zip" className="project-btn secondary" target="_blank" rel="noopener noreferrer">
               <i className="fas fa-download"></i>
               Download Source

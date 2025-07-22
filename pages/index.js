@@ -126,12 +126,12 @@ export default function Home() {
             </div>
             
             <div className="portfolio-item">
-              <div className="portfolio-image"><i className="fa-solid fa-tower-observation"></i></div>
+              <div className="portfolio-image"><i className="fa-solid fa-car"></i></div>
               <div className="portfolio-content">
-                <h3>Blackpool Tycoon – Board Game Prototype</h3>
-                <p><strong>Tech Used:</strong> InDesign, Manual Print Assembly<br />
-                Board game based on property management and tourism around Blackpool attractions. Includes visitor tokens, weather events, and iterative design with feedback.</p>
-                <Link href="/blackpool-tycoon" className="portfolio-link">View Project →</Link>
+                <h3>Self-Driving Car AI – Neural Network Simulation</h3>
+                <p><strong>Tech Used:</strong> JavaScript, Neural Networks, HTML5 Canvas, Machine Learning<br />
+                AI-powered autonomous vehicles that learn to drive using neural networks and genetic algorithms. Features real-time decision making and collision avoidance.</p>
+                <Link href="/self-driving-car" className="portfolio-link">View Project →</Link>
               </div>
             </div>
           </div>

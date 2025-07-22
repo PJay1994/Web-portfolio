@@ -134,6 +134,16 @@ export default function Home() {
                 <Link href="/self-driving-car" className="portfolio-link">View Project →</Link>
               </div>
             </div>
+
+            <div className="portfolio-item">
+              <div className="portfolio-image"><i className="fa-solid fa-gamepad"></i></div>
+              <div className="portfolio-content">
+                <h3>MonoGame Platformer – Cross-Platform 2D Game</h3>
+                <p><strong>Tech Used:</strong> MonoGame, C#, 2D Physics, Cross-Platform<br />
+                Feature-rich platformer game with custom physics, sprite animation, and level design. Showcases advanced C# programming and game development skills.</p>
+                <Link href="/monogame-platformer" className="portfolio-link">View Project →</Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

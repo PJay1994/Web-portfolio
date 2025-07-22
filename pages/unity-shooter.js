@@ -14,7 +14,9 @@ export default function UnityShooter() {
       {/* Navigation */}
       <nav>
         <div className="container">
-          <Link href="/" className="logo">Peter Bidle</Link>
+          <Link href="/" className="logo">
+            <img src="/logo.png" alt="Logo" className="logo-image" />  
+          </Link>
           <Link href="/#portfolio" className="back-link">
             <i className="fas fa-arrow-left"></i>
             Back to Portfolio

@@ -14,7 +14,7 @@ export default function PythonMultiplayer() {
       {/* Navigation */}
       <nav>
         <div className="container">
-          <Link href="/" className="logo">Peter Bidle</Link>
+          <img src="/logo.png" alt="Logo" className="logo-image" />  
           <Link href="/#portfolio" className="back-link">
             <i className="fas fa-arrow-left"></i>
             Back to Portfolio

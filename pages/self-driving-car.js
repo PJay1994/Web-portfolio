@@ -16,7 +16,6 @@ export default function SelfDrivingCar() {
         <div className="container">
           <Link href="/" className="logo">
             <img src="/logo.png" alt="Logo" className="logo-image" />
-            Peter Bidle
           </Link>
           <Link href="/#portfolio" className="back-link">
             <i className="fas fa-arrow-left"></i>

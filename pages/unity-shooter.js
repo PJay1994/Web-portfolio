@@ -191,7 +191,7 @@ public class ObjectPool : MonoBehaviour
 
           {/* Project Links */}
           <div className="project-links">
-            <a href="#" className="project-btn">
+            <a href="https://github.com/PJay1994/Top-Down-shooter" className="project-btn" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
               View on GitHub
             </a>

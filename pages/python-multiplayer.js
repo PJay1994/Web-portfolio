@@ -206,7 +206,7 @@ class GameServer:
 
           {/* Project Links */}
           <div className="project-links">
-            <a href="#" className="project-btn">
+            <a href="https://github.com/PJay1994/RPS-Login" className="project-btn" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
               View on GitHub
             </a>

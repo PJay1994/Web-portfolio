@@ -249,13 +249,9 @@ public class Player : GameObject
 
           {/* Project Links */}
           <div className="project-links">
-            <a href="https://github.com/PJay1994/monogame-platformer" className="project-btn" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/PJay1994/platformer-monogame" className="project-btn" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
               View on GitHub
-            </a>
-            <a href="https://github.com/PJay1994/monogame-platformer/releases" className="project-btn secondary" target="_blank" rel="noopener noreferrer">
-              <i className="fas fa-download"></i>
-              Download Game
             </a>
           </div>
         </div>

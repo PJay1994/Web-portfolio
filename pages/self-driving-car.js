@@ -212,7 +212,7 @@ class NeuralNetwork {
 
           {/* Project Links */}
           <div className="project-links">
-            <a href="https://github.com/PJay1994/self-driving-car-ai" className="project-btn" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/PJay1994/ML-Self-Driving-Car" className="project-btn" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
               View on GitHub
             </a>

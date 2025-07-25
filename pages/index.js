@@ -65,7 +65,7 @@ export default function Home() {
             <div className="about-image">👋</div>
             <div className="about-text">
               <p>I'm a dedicated and versatile <strong>Software Engineer & Game Developer</strong> currently completing my Bachelor's degree in Computer Software Engineering at Blackpool and The Fylde College (Jun 2024 - Jun 2025, Grade: 1st). My educational foundation includes a Foundation degree in Software Engineering Game Development and a Level 3 Diploma in ICT Systems and Data Security with Distinction.</p>
-              <p>My expertise spans across game development, interactive media, and immersive VR experiences. I've worked extensively with Unity (C#), Unreal Engine, Python, and Flutter. Throughout my studies, I've led and contributed to a variety of projects — from VR usability studies using the Meta Quest 3 to networked multiplayer games and innovative tech prototypes. I combine strong technical skills with user-centred design thinking, and I'm actively seeking roles where I can apply this blend of creative and engineering knowledge.</p>
+              <p>My expertise spans across game development, interactive media, and immersive VR experiences. I've worked extensively with Unity (C#), Unreal Engine, Python, and Flutter. Throughout my studies, I've led and contributed to a variety of projects from VR usability studies using the Meta Quest 3 to networked multiplayer games and innovative tech prototypes. I combine strong technical skills with user-centred design thinking, and I'm actively seeking roles where I can apply this blend of creative and engineering knowledge.</p>
             </div>
           </div>
         </div>

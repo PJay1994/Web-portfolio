@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import ScrollFloat from '../components/ScrollFloat'
+import MobileNavigation from '../components/MobileNavigation'
 
 
 export default function Home() {
@@ -26,23 +27,8 @@ export default function Home() {
         />
       </Head>
 
-      {/* Navigation */}
-      <nav id="navbar">
-        <div className="container">
-          <a href="#" className="logo">
-            <img src="/logo.png" alt="Peter Bidle Logo" className="logo-image" />
-          </a>
-          <ul className="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+      {/* REPLACE THE OLD NAVIGATION WITH THIS: */}
+      <MobileNavigation />
 
       {/* Hero Section */}
       <section id="home" className="hero">

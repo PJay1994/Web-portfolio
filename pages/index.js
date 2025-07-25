@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import ScrollFloat from '../components/ScrollFloat'
+
 
 export default function Home() {
   return (
@@ -56,7 +58,9 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="section">
         <div className="container">
-          <h2>About Me</h2>
+          <ScrollFloat>
+            <h2>About Me</h2>
+          </ScrollFloat>
           <div className="about-content">
             <div className="about-image">👋</div>
             <div className="about-text">
@@ -70,7 +74,9 @@ export default function Home() {
       {/* Education Section */}
       <section id="education" className="section">
         <div className="container">
-          <h2>Education</h2>
+          <ScrollFloat>
+            <h2>Education</h2>
+          </ScrollFloat>
           <div className="education-timeline">
             <div className="education-item">
               <div className="education-date">Jun 2024 - Jun 2025</div>
@@ -106,7 +112,9 @@ export default function Home() {
       {/* Portfolio Section */}
       <section id="portfolio" className="section">
         <div className="container">
-          <h2>My Portfolio</h2>
+          <ScrollFloat>
+            <h2>Portfolio</h2>
+          </ScrollFloat>
           <div className="portfolio-grid">
             <div className="portfolio-item">
               <div className="portfolio-image"><i className="fa-brands fa-meta"></i></div>
@@ -164,7 +172,9 @@ export default function Home() {
       {/* Skills Section */}
       <section id="skills" className="section">
         <div className="container">
-          <h2>Skills & Technologies</h2>
+          <ScrollFloat>
+            <h2>Skills & Technologies</h2>
+          </ScrollFloat>
           <div className="skills-grid">
             <div className="skill-item">
               <div className="skill-icon"><i className="fa-solid fa-gamepad"></i></div>
@@ -213,7 +223,9 @@ export default function Home() {
       {/* Certifications Section */}
       <section id="certifications" className="section">
         <div className="container">
-          <h2>Licenses & Certifications</h2>
+          <ScrollFloat>
+            <h2>Licenses & Certifications</h2>
+          </ScrollFloat>
           <div className="certifications-grid">
             <div className="certification-item">
               <div className="cert-icon">C#</div>
@@ -264,7 +276,9 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="section">
         <div className="container">
-          <h2>Get In Touch</h2>
+          <ScrollFloat>
+            <h2>Contact Me</h2>
+          </ScrollFloat>
           <form className="contact-form" name="contact" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
             <div className="form-group">

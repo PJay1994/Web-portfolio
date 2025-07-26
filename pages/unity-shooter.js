@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import MobileNavigation from '../components/MobileNavigation'
 
 export default function UnityShooter() {
   return (
@@ -25,17 +26,7 @@ export default function UnityShooter() {
       </Head>
 
       {/* Navigation */}
-      <nav>
-        <div className="container">
-          <Link href="/" className="logo">
-            <img src="/logo.svg" alt="Peter Bidle Logo" className="logo-image" />  
-          </Link>
-          <Link href="/#portfolio" className="back-link">
-            <i className="fas fa-arrow-left"></i>
-            Back to Portfolio
-          </Link>
-        </div>
-      </nav>
+      <MobileNavigation />
 
       {/* Project Hero */}
       <section className="project-hero">

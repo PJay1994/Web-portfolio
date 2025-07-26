@@ -51,7 +51,7 @@ export default function MobileNavigation() {
       <div className="container">
         {/* Logo */}
         <a href="#home" className="logo" onClick={() => scrollToSection('home')}>
-          <img src="/logo.png" alt="Peter Bidle Logo" className="logo-image" />
+          <img src="/logo.svg" alt="Peter Bidle Logo" className="logo-image" />
         </a>
 
         {/* Desktop Navigation */}

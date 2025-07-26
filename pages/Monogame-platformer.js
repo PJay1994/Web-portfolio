@@ -8,9 +8,11 @@ export default function MonoGamePlatformer() {
       <Head>
         <title>MonoGame Platformer - Peter Bidle</title>
         <meta name="description" content="Cross-Platform 2D Platformer Game with Physics & Animation" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKBZERC2MM"></script>
         <script

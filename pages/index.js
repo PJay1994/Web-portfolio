@@ -10,7 +10,10 @@ export default function Home() {
       <Head>
         <title>Peter Bidle - Portfolio</title>
         <meta name="description" content="Software Engineer & Game Developer Portfolio" />
-        <link rel="icon" href="/favicon20x20.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
         {/* Google tag (gtag.js) */}

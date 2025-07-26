@@ -1101,3 +1101,72 @@ footer {
         height: 2.5px;
     }
 }
+
+/* ===================================== */
+/* CODE IMAGE STYLES - Added for Project Pages */
+/* ===================================== */
+
+/* Code Image Styles */
+.code-image {
+    margin: 25px 0;
+    text-align: center;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.code-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.code-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.code-image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced gallery for code images */
+.gallery-item .code-image {
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+}
+
+.gallery-item .code-image img {
+    border-radius: 15px;
+    border: 3px solid rgba(102, 126, 234, 0.2);
+}
+
+.gallery-item .code-image img:hover {
+    border-color: rgba(102, 126, 234, 0.5);
+}
+
+/* Mobile responsiveness for code images */
+@media (max-width: 768px) {
+    .code-image {
+        padding: 15px;
+        margin: 20px 0;
+    }
+    
+    .code-image img {
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .code-image {
+        padding: 10px;
+        margin: 15px 0;
+    }
+}

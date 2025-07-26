@@ -11,7 +11,6 @@ export default function SelfDrivingCar() {
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
         {/* Google tag (gtag.js) */}
@@ -28,7 +27,6 @@ export default function SelfDrivingCar() {
         />
       </Head>
 
-      {/* Navigation */}
       <MobileNavigation />
 
       {/* Project Hero */}
@@ -55,19 +53,13 @@ export default function SelfDrivingCar() {
             
             <p>This project demonstrates deep understanding of neural networks, genetic algorithms, collision detection, and real-time AI decision making. The cars learn to drive by processing sensor data and making split-second decisions to navigate safely through complex traffic scenarios.</p>
 
-            {/* Image Gallery */}
+            {/* Live Simulation Image */}
             <div className="image-gallery">
               <div className="gallery-item">
-                <div className="gallery-placeholder">🚗</div>
-                <div className="gallery-caption">AI Car Simulation</div>
-              </div>
-              <div className="gallery-item">
-                <div className="gallery-placeholder">🧠</div>
-                <div className="gallery-caption">Neural Network Visualization</div>
-              </div>
-              <div className="gallery-item">
-                <div className="gallery-placeholder">📊</div>
-                <div className="gallery-caption">Sensor Data Processing</div>
+                <div className="code-image">
+                  <img src="/images/self-driving-car/simulation-running.png" alt="Live AI Car Simulation" />
+                </div>
+                <div className="gallery-caption">Live AI Car Simulation with Neural Network Visualization</div>
               </div>
             </div>
           </section>
@@ -103,10 +95,55 @@ export default function SelfDrivingCar() {
             </div>
           </section>
 
+          {/* Code Implementation Section */}
+          <section className="content-section">
+            <h2>Code Implementation</h2>
+            <p>The project is built entirely in vanilla JavaScript with custom neural network implementation. Here are the key components:</p>
+            
+            <h3>Traffic Generation System</h3>
+            <p>Dynamic traffic generation creates realistic driving scenarios with multiple lanes and varied traffic patterns:</p>
+            <div className="code-image">
+              <img src="/images/self-driving-car/traffic-generation.png" alt="Traffic Generation Code" />
+            </div>
+            <div className="code-image">
+              <img src="/images/self-driving-car/traffic-function.png" alt="Random Traffic Function" />
+            </div>
+
+            <h3>Road and Lane Architecture</h3>
+            <p>The road system with multiple lanes and proper lane center calculations for AI navigation:</p>
+            <div className="code-image">
+              <img src="/images/self-driving-car/road-constructor.png" alt="Road Class Constructor" />
+            </div>
+
+            <h3>Sensor System Implementation</h3>
+            <p>Ray-casting sensor system that provides environmental awareness to the AI cars:</p>
+            <div className="code-image">
+              <img src="/images/self-driving-car/sensor-class.png" alt="Sensor Class Implementation" />
+            </div>
+            <div className="code-image">
+              <img src="/images/self-driving-car/sensor-drawing.png" alt="Sensor Drawing and Ray Casting" />
+            </div>
+
+            <h3>Neural Network Architecture</h3>
+            <p>Custom neural network implementation with genetic algorithm evolution:</p>
+            <div className="code-image">
+              <img src="/images/self-driving-car/neural-network-generation.png" alt="Neural Network Car Generation" />
+            </div>
+            <div className="code-image">
+              <img src="/images/self-driving-car/brain-loading.png" alt="Neural Network Brain Loading" />
+            </div>
+
+            <h3>User Interface Controls</h3>
+            <p>Interactive controls for saving, loading, and managing the AI simulation:</p>
+            <div className="code-image">
+              <img src="/images/self-driving-car/control-interface.png" alt="Control Interface HTML" />
+            </div>
+          </section>
+
           {/* Technical Implementation */}
           <section className="content-section">
-            <h2>Technical Implementation</h2>
-            <p>Built entirely in vanilla JavaScript using HTML5 Canvas for real-time graphics rendering and custom neural network implementation from scratch.</p>
+            <h2>Technical Architecture</h2>
+            <p>Built using vanilla JavaScript with HTML5 Canvas for real-time graphics rendering and custom neural network implementation from scratch.</p>
 
             <h3>Core Systems:</h3>
             <ul>
@@ -116,44 +153,6 @@ export default function SelfDrivingCar() {
               <li><strong>Sensor System</strong> - Ray-casting for environment detection and obstacle avoidance</li>
               <li><strong>Canvas Rendering</strong> - High-performance 2D graphics with smooth animations</li>
             </ul>
-
-            <div className="code-block">
-              <code>
-{`// Neural Network Implementation
-class NeuralNetwork {
-    constructor(neuronCounts) {
-        this.levels = [];
-        for (let i = 0; i < neuronCounts.length - 1; i++) {
-            this.levels.push(new Level(
-                neuronCounts[i], neuronCounts[i + 1]
-            ));
-        }
-    }
-
-    static feedForward(givenInputs, network) {
-        let outputs = Level.feedForward(
-            givenInputs, network.levels[0]);
-        for (let i = 1; i < network.levels.length; i++) {
-            outputs = Level.feedForward(
-            outputs, network.levels[i]);
-        }
-        return outputs;
-    }
-
-    static mutate(network, amount = 1) {
-        network.levels.forEach(level => {
-            for (let i = 0; i < level.biases.length; i++) {
-                level.biases[i] = lerp(
-                    level.biases[i],
-                    Math.random() * 2 - 1,
-                    amount
-                )
-            }
-        });
-    }
-}`}
-              </code>
-            </div>
           </section>
 
           {/* AI Learning Process */}
@@ -187,7 +186,7 @@ class NeuralNetwork {
 
           {/* Challenges & Solutions */}
           <section className="content-section">
-            <h2>Challenges & Solutions</h2>
+            <h2>Development Challenges & Solutions</h2>
             
             <h3>Neural Network Optimization:</h3>
             <p><strong>Challenge:</strong> Finding the right network architecture and learning parameters.</p>
@@ -202,7 +201,7 @@ class NeuralNetwork {
             <p><strong>Solution:</strong> Implemented mutation mechanisms and diverse traffic patterns to encourage exploration of different driving strategies.</p>
           </section>
 
-          {/* Features & Controls */}
+          {/* Interactive Features */}
           <section className="content-section">
             <h2>Interactive Features</h2>
             <p>The simulation includes several interactive elements for experimentation and analysis:</p>
@@ -221,10 +220,6 @@ class NeuralNetwork {
             <a href="https://github.com/PJay1994/ML-Self-Driving-Car" className="project-btn" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
               View on GitHub
-            </a>
-            <a href="https://github.com/PJay1994/self-driving-car-ai/archive/main.zip" className="project-btn secondary" target="_blank" rel="noopener noreferrer">
-              <i className="fas fa-download"></i>
-              Download Source
             </a>
           </div>
         </div>

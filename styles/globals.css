@@ -169,10 +169,13 @@ body {
     width: 75%;
     max-width: 280px;
     height: 100vh;
+    height: 100dvh;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     transition: right 0.3s ease;
     z-index: 999;
     overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .mobile-menu.active {
@@ -180,17 +183,19 @@ body {
 }
 
 .mobile-menu-content {
-    padding: 70px 20px 20px;
+    padding: 80px 20px 40px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    box-sizing: border-box;
 }
 
 .mobile-nav-links {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 40px 0;
+    flex-grow: 1;
 }
 
 .mobile-nav-links li {
@@ -227,9 +232,10 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 20px;
-    padding-top: 20px;
+    margin-top: auto;
+    padding: 20px 0 20px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
 }
 
 .mobile-social a {

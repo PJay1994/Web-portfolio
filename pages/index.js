@@ -126,16 +126,6 @@ export default function Home() {
             </div>
             
             <div className="portfolio-item">
-              <div className="portfolio-image"><i className="fa-solid fa-gun"></i></div>
-              <div className="portfolio-content">
-                <h3>Top-Down 2D Shooter (Unity)</h3>
-                <p><strong>Tech Used:</strong> Unity, C#<br />
-                A fast-paced shooter with enemy waves, score tracking, and sprite-based assets. Features player damage system and object pooling for performance.</p>
-                <Link href="/unity-shooter" className="portfolio-link">View Project →</Link>
-              </div>
-            </div>
-            
-            <div className="portfolio-item">
               <div className="portfolio-image"><i className="fa-brands fa-python"></i></div>
               <div className="portfolio-content">
                 <h3>Rock-Paper-Scissors Multiplayer (Python)</h3>

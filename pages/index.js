@@ -11,10 +11,10 @@ export default function Home() {
         <title>Peter Bidle - Portfolio</title>
         <meta name="description" content="Software Engineer & Game Developer Portfolio" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKBZERC2MM"></script>
@@ -98,7 +98,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Portfolio Section */}
+      {/* Portfolio Section - Updated */}
       <section id="portfolio" className="section">
         <div className="container">
           <ScrollFloat>
@@ -112,6 +112,16 @@ export default function Home() {
                 <p><strong>Tech Used:</strong> Unity, C#, XR Interaction Toolkit, Meta Quest 3<br />
                 Developed immersive VR prototypes to compare hand tracking and controllers for usability and immersion. Designed for academic research and tested with users.</p>
                 <Link href="/vr-interaction-study" className="portfolio-link">View Project →</Link>
+              </div>
+            </div>
+            
+            <div className="portfolio-item">
+              <div className="portfolio-image"><i className="fa-solid fa-crosshairs"></i></div>
+              <div className="portfolio-content">
+                <h3>Unity 2D Shooter</h3>
+                <p><strong>Tech Used:</strong> Unity, C#, 2D Physics, AI Enemies<br />
+                Strategic 2D shooter featuring grid-based movement, intelligent AI enemies, collectible systems, and tactical combat mechanics.</p>
+                <Link href="/unity-shooter" className="portfolio-link">View Project →</Link>
               </div>
             </div>
             

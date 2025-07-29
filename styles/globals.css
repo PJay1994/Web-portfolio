@@ -300,6 +300,14 @@ body {
     position: relative;
     overflow: hidden;
 }
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}   
 
 .hero::before {
     content: '';
